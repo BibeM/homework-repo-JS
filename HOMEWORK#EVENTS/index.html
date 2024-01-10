@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Dynamic table</h1>
+      <div class="form-container">
+        <label for="rownumber">Number of rows:</label>
+        <input type="number" id="rownumber" /><br /><br />
+        <label for="columnumber">Number of colums:</label>
+        <input type="number" id="columnumber" /><br /><br />
+        <button type="button" id="tableBtn">Create table</button>
+      </div>
+      <div>
+        <table>
+          <tbody class="table-container"></tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
