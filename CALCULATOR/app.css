@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  height: 500px;
+  width: max-content;
+  margin: 50px;
+  margin-bottom: 0px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+h1 {
+  width: 310px;
+  padding: 20px;
+  padding-bottom: 0px;
+  color: blue;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+section {
+  display: grid;
+  grid-template-rows: 1fr max-content 1fr;
+}
+.calculator-display {
+  grid-column: 1/-1;
+  width: 280px;
+  height: 60px;
+  background-color: rgb(187, 224, 212);
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px lightblue;
+  margin: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.calculator-display .first-row {
+  font-size: 1.5rem;
+  color: black;
+}
+.calculator-display .second-row {
+  font-size: 2rem;
+  color: black;
+}
+.buttons {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 0px 20px;
+}
+button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+  background-color: aqua;
+  border-radius: 10px;
+}
+button:active {
+  background-color: rgb(226, 128, 145);
+}
+.special-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.special-button :active {
+  background-color: aqua;
+}
+.clearBtn {
+  width: 145px;
+  height: 63px;
+  background-color: rgb(226, 128, 145);
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(235, 193, 200);
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.backspace {
+  width: 145px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 128, 145);
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(235, 193, 200);
+  padding: 15px;
+  font-size: 50px;
+  margin-top: 5px;
+}
